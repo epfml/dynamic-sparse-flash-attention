@@ -2,8 +2,6 @@
 
 Code to reproduce results for the paper "Faster Causal Attention Over Large Sequences Through Sparse Flash Attention"
 
-Arxiv link.
-
 # Setup
 
 To install the required python dependencies, first run:
@@ -25,7 +23,7 @@ In the command above we set the Triton library to the commit used in our experim
 
 # Reproducing our LM experiments on OpenWebText2
 
-**GPU requirements:** Prefeerably, you need at least one A100. Some of our experiments use data-parallelism with up to 3 A100s. You should have no problem running those experiments on any GPU supporting `bfloat16`, you might have to change the model parameters to adapt to the memory available. 
+**GPU requirements:** Preferably, you need at least one A100. Some of our experiments use data-parallelism with up to 3 A100s. You should have no problem running those experiments on any GPU supporting `bfloat16`, you might have to change the model parameters to adapt to the memory available. 
 
 Go in the `openwebtext2-experiments` folder and run the `script/train-LMs.sh` command.
 
